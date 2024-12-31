@@ -1,0 +1,50 @@
+/* 全体のスタイル */
+body {
+    font-family: 'IBM Plex Mono', monospace; /* IBM Plex Monoフォントを使用 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: 'IBM Plex Mono', monospace; /* 明示的にフォントを指定 */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4fb0ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #52bae4;
+}
