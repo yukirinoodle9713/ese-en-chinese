@@ -1,6 +1,5 @@
-/* 全体のスタイル */
 body {
-    font-family: 'IBM Plex Mono', monospace; /* IBM Plex Monoフォントを使用 */
+    font-family: 'IBM Plex Mono', monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +31,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: vertical;
-    font-family: 'IBM Plex Mono', monospace; /* 明示的にフォントを指定 */
+    font-family: 'IBM Plex Mono', monospace; 
 }
 
 button {

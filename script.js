@@ -6,19 +6,19 @@ const mapping = {
     'Y': '丫', 'Z': '乙', ' ': '　'
 };
 
-// 入力を監視して、リアルタイムで変換結果を出力
+//変換結果を出力
 document.getElementById('input').addEventListener('input', () => {
     const input = document.getElementById('input').value;
     let output = '';
     for (let char of input) {
         output += mapping[char.toUpperCase()] || char;
     }
-    document.getElementById('output').value = output; // ここをinnerTextではなくvalueに変更
+    document.getElementById('output').value = output;
 });
 
-// ツイートボタンのクリックイベント
+// ツイートボタン
 document.getElementById('convert').addEventListener('click', () => {
-    const outputText = document.getElementById('output').value; // outputのvalueを取得
+    const outputText = document.getElementById('output').value;
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(outputText)}`;
     window.open(tweetUrl, '_blank');
 });
